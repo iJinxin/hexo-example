@@ -1,0 +1,39 @@
+// -----------------------
+// define global variables
+// -----------------------
+
+// ==== default color ====
+$white: #ffffff !default;
+$black: #555555 !default;
+$dark-gray: #404040 !default;
+
+// ==== set global default value ====
+$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+
+$global-background: $white !default;
+
+$global-body-width: 1024px !default;
+
+$global-left-part-width: 240px !default;
+
+$global-right-part-width: 784px !default;
+
+$global-font-size: 16px !default;
+
+$global-lineheight: 1.5 !default;
+
+$global-headings: (
+   h1: 26px,
+   h2: 24px,
+   h3: 20px,
+   h4: 16px,
+   h5: 14px,
+   h6: 12px
+) !default;
+
+// ==== set left nav default value ====
+
+
+
+// ==== set post default value ====
+

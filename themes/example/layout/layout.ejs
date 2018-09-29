@@ -2,9 +2,18 @@
 <html>
 <%- partial('_partial/head') %>
 <body>
-    <%- partial('_partial/header') %>
-    <main class="main">
-        <%- body %>
-    </main>
+    <div class="container">
+        <div class="left-part">
+            <%- partial('_partial/sidebar') %>
+            <% if (is_post()) { %>
+                <%- partial('_partial/toc')%>
+            <% } %>
+        </div>
+        <div class="right-part">
+            <main class="main">
+                <%- body %>
+            </main>
+        </div>
+    </div>
 </body>
 </html>

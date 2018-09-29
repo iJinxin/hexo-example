@@ -1,0 +1,14 @@
+<aside class="aside">
+    <img src="" class="logo-img">
+    <p>iJinxin</p>
+    <hr>
+    <nav class="sidebar-nav">
+        <ul class="menu">
+            <% for (item in theme.menu) { %>
+                <li class="menu-item">
+                    <a href="<%- url_for(theme.menu[item]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
+                </li>
+            <% } %>
+        </ul>
+    </nav>
+</aside>
