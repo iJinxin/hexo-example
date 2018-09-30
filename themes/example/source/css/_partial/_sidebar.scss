@@ -1,0 +1,46 @@
+.aside-nav {
+  margin-top: $side-top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-info {
+  width: $side-userinfo-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid $gray;
+  .user-logo {
+    width: $side-logo-width;
+  }
+  .user-name {
+    padding: 10px 0 20px 0;
+    >i {
+      font-size: $global-font-size;
+      font-family: "italic" !important;
+      font-weight: 300;
+      color: $dark-gray;
+    }
+  }
+}
+
+.sidebar-nav {
+  width: 100%;
+  margin-top: $side-nav-top;
+  display: flex;
+  justify-content: center;
+  .menu-item {
+    margin: $side-nav-item-margin auto;
+    >i {
+      padding-right: $side-nav-icon-padding;
+      color: $dark-gray;
+    }
+    > a{
+      color: $dark-gray;
+      font-size: $side-nav-font;
+    }
+  }
+  .menu-item.active {
+
+  }
+}

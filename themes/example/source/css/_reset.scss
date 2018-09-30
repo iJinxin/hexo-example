@@ -1,6 +1,13 @@
-body{
+body, ul{
   padding: 0;
   margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img{
@@ -16,6 +23,7 @@ img{
 .container {
   width: $global-body-width;
   margin: auto;
+  margin-top: $global-container-top;
   display: flex;
   justify-content: left;
   .left-part {
