@@ -1,0 +1,24 @@
+// post common style
+.post-abstract, .post-whole {
+  .post-title h2 {
+    font-weight: $global-font-weight;
+  }
+  .post-title-link {
+    color: $black;
+  }
+  .post-time {
+    color: $gray;
+    font-size: $global-font-size;
+  }
+  .post-content {
+    color: $black;
+    font-size: $global-font-size;
+    margin-top: $margin-middle;
+  }
+}
+
+// ==== post abstract ====
+.post-abstract {
+  padding: $padding-large 0;
+  border-bottom: $post-border
+}

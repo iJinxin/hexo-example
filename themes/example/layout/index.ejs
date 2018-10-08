@@ -1,14 +1,14 @@
 <section class="posts">
     <% page.posts.each(function (post) { %>
-        <article class="post">
+        <article class="post-abstract">
             <div class="post-title">
-                <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
-            </div>
-            <div class="post-content">
-                <%- post.excerpt %>
+                <h2><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></h2>
             </div>
             <div class="post-meta">
                 <span class="post-time"><%- date(post.date, "YYYY-MM-DD")%></span>
+            </div>
+            <div class="post-content">
+                <%- post.excerpt %>
             </div>
             <!--<span id="busuanzi_value_page_pv"></span>-->
         </article>
