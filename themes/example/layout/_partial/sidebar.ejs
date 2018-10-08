@@ -9,11 +9,11 @@
         <ul class="menu">
             <li class="menu-item" <% if (is_home()) { %> <%- "class = active" %> <% } %>>
                 <i class="iconfont icon-home"></i>
-                <a href="<%- url_for(theme.menu.Home) %>" class="menu-item-link"><%- __('Menu.Home') %></a>
+                <a href="<%= url_for(config.home_dir || '/') %>" class="menu-item-link"><%- __('Menu.Home') %></a>
             </li>
             <li class="menu-item" <% if (is_current('archives')) { %> <%- "class = active" %> <% } %>>
                 <i class="iconfont icon-archive"></i>
-                <a href="<%- url_for(theme.menu.Archives) %>" class="menu-item-link"><%- __('Menu.Archives')%></a>
+                <a href="<%- url_for(config.archive_dir) %>" class="menu-item-link"><%- __('Menu.Archives')%></a>
             </li>
         </ul>
     </nav>

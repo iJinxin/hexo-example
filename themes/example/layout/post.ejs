@@ -5,6 +5,21 @@
         </div>
         <div class="post-meta">
             <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+            <% if (page.categories.length){ %>
+                <span class="post-category">
+                    <% page.categories.forEach(function (category) { %>
+                        <a class="category" href="<%= config.root %>category/#<%= category.name %>"><%= category.name %></a>
+                    <% }) %>
+                </span>
+            <% } %>
+
+            <% if (page.tags.length) {%>
+                <span class="post-tag">
+                    <% page.tags.forEach(function (tag) { %>
+                        <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>" title="<%= tag.name %>"><%= tag.name %></a>
+                    <% })%>
+                </span>
+            <% } %>
         </div>
         <div class="post-content">
             <%- page.content %>
