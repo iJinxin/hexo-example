@@ -9,8 +9,9 @@ hexo-theme-aircloud:https://github.com/aircloud/hexo-theme-aircloud
 
 
 ### plan
-- 主页样式
-- 文章详情样式
+- 主页样式 -- done
+- 文章详情样式 -- done
+- 翻页
 - 归档页布局和样式
 - footer版权声明
 - about个人主页

@@ -1,8 +1,17 @@
-<% if (page.total > 1) { %>
-    <nav class="page-nav">
-        <%- paginator({
-            prev_text: "&laquo;" + __('Paginator.Prev'),
-            next_text: __('Paginator.Next') + "&raquo;"
-        }) %>
-    </nav>
-<% } %>
+<div class="paginator">
+    <% if (!is_post()) { %>
+        <% if (page.prev) { %>
+        <a class="prev" href="<%- url_for(page.prev_link) %>"><%- __('Paginator.Prev') %></a>
+        <% } %>
+        <% if (page.next) { %>
+        <a class="next" href="<%- url_for(page.next_link) %>"><%- __('Paginator.Next') %></a>
+        <% } %>
+    <% }else { %>
+        <% if (page.prev) {%>
+            <a class="prev" href="<%- url_for(page.prev.path)%>"><%= page.prev.title %></a>
+        <% } %>
+        <% if (page.next) {%>
+            <a class="next" href="<%- url_for(page.next.path)%>"><%= page.next.title %></a>
+        <% } %>
+    <% } %>
+</div>
