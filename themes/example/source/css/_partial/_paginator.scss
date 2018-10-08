@@ -1,0 +1,17 @@
+.paginator {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    zoom: 1;
+  }
+  margin: 1em 0;
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}

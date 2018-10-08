@@ -1,17 +1,29 @@
 <div class="paginator">
     <% if (!is_post()) { %>
         <% if (page.prev) { %>
-        <a class="prev" href="<%- url_for(page.prev_link) %>"><%- __('Paginator.Prev') %></a>
+        <a class="prev" href="<%- url_for(page.prev_link) %>">
+            <i class="iconfont icon-prev"></i>
+            <%- __('Paginator.Prev') %>
+        </a>
         <% } %>
         <% if (page.next) { %>
-        <a class="next" href="<%- url_for(page.next_link) %>"><%- __('Paginator.Next') %></a>
+        <a class="next" href="<%- url_for(page.next_link) %>">
+            <%- __('Paginator.Next') %>
+            <i class="iconfont icon-next"></i>
+        </a>
         <% } %>
     <% }else { %>
         <% if (page.prev) {%>
-            <a class="prev" href="<%- url_for(page.prev.path)%>"><%= page.prev.title %></a>
+            <a class="prev" href="<%- url_for(page.prev.path)%>">
+                <i class="iconfont icon-prev"></i>
+                <%= page.prev.title %>
+            </a>
         <% } %>
         <% if (page.next) {%>
-            <a class="next" href="<%- url_for(page.next.path)%>"><%= page.next.title %></a>
+            <a class="next" href="<%- url_for(page.next.path)%>">
+                <%= page.next.title %>
+                <i class="iconfont icon-next"></i>
+            </a>
         <% } %>
     <% } %>
 </div>
