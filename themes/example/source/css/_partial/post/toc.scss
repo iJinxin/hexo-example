@@ -1,0 +1,19 @@
+.post-toc {
+  background: #ededed;
+  border-radius: 4px;
+  padding: 10px 20px 10px 0;
+
+  h2 {
+    margin-left: 20px;
+    font-weight: $global-font-weight;
+  }
+
+  ol {
+    list-style: none;
+    padding-left: 15px;
+  }
+  > ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+}
