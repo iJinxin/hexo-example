@@ -1,0 +1,118 @@
+code, pre {
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+}
+
+code {
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: $code-color;
+}
+.highlight {
+  margin: 1em 0;
+  background: #ededed;
+  border-radius: 4px;
+  overflow-x: auto;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  position: relative;
+
+  table, tr, td {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 2px 7px;
+      font-size: $code-font-size;
+      content: 'Code';
+      background: darken(#ededed, 2%);
+    }
+  }
+
+  @each $sign, $text in $code-type-list {
+    &.#{$sign} > table::after {
+      content: $text;
+    }
+  }
+
+  .gutter {
+    width: 10px;
+    color: $gray;
+
+    pre {
+      margin: 0;
+      padding: 30px 7px 10px;
+    }
+  }
+
+  .code {
+    pre {
+      margin: 0;
+      padding: 30px 10px 10px;
+    }
+  }
+
+  .code {
+    .comment,
+    .quote {
+      color: map-get($code-highlight-color, comment);
+    }
+
+    .keyword,
+    .selector-tag,
+    .addition {
+      color: map-get($code-highlight-color, keyword);
+    }
+
+    .number,
+    .string,
+    .meta .meta-string,
+    .literal,
+    .doctag,
+    .regexp {
+      color: map-get($code-highlight-color, number);
+    }
+
+    .title,
+    .section,
+    .name,
+    .selector-id,
+    .selector-class {
+      color: map-get($code-highlight-color, title);
+    }
+
+    .attribute,
+    .attr,
+    .variable,
+    .template-variable,
+    .class .title,
+    .type {
+      color: map-get($code-highlight-color, attribute);
+    }
+
+    .symbol,
+    .bullet,
+    .subst,
+    .meta,
+    .meta .keyword,
+    .selector-attr,
+    .selector-pseudo,
+    .link {
+      color: map-get($code-highlight-color, symbol);
+    }
+
+    .built_in,
+    .deletion {
+      color: map-get($code-highlight-color, built_in);
+    }
+  }
+}

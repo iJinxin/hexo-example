@@ -14,21 +14,26 @@ date: 2018-10-08 10:00:00
 - 最小化全局变量，将需要用到的所有全局变量放入一个全局对象中，降低冲突，提升可读性
 - 使用闭包进行信隐藏
 - 禁用全局变量，每个文件都包裹在自执行函数里
-```
-    var func1 = function (val) {
-        var level = 1;
-        var step = function () {
-          // dosomething
-        }
-        step();
-      }
 
-      var func2 = (function () {
-        var someValue = 1;
-        return function () {
-          // dosomething
-        }
-      }())
+```javascript
+const func1 = function (val) {
+    var level = 1;
+    var step = function () {
+         // dosomething
+    }
+    step();
+}
+
+var func2 = (function () {
+    var someValue = 1;
+    return function () {
+        // dosomething
+    }
+}())
+```
+
+```js
+<p>123</p>
 ```
 
 

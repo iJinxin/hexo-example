@@ -13,12 +13,20 @@
   .post-content {
     color: $black;
     font-size: $global-font-size;
-    margin-top: $margin-middle;
   }
 }
 
 // ==== post abstract ====
 .post-abstract {
-  padding: $padding-large 0;
+  padding-top: $padding-large;
+  padding-bottom: $padding-small;
   border-bottom: $post-border
 }
+
+
+// ==== Code ==== //
+// code style
+.posts {
+  @import "post/code";
+}
+
