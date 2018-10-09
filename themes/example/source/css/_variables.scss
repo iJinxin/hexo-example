@@ -2,31 +2,23 @@
 // define global variables
 // -----------------------
 
-// ==== default color ====
+// ======== default color ========
+$theme-color: #c92027 !default;
 $white: #ffffff !default;
 $black: #1a1a1a !default;
 $dark-gray: #808080  !default;
 $gray: #8590a6 !default;
 $light-gray: #e6e6e6 !default;
 
-// ==== set global default value ====
+// ======== set global default value ========
+// ==== font ====
 $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
-$global-background: $white !default;
-
-$global-body-width: 1024px !default;
-
-$global-container-top: 60px !default;
-
-$global-left-part-width: 764px !default;
-
-$global-right-part-width: 240px !default;
+$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 $global-font-size: 16px !default;
 
 $global-font-weight: 400 !default;
-
-$global-lineheight: 1.5 !default;
 
 $global-headings: (
         h1: 26px,
@@ -37,7 +29,23 @@ $global-headings: (
         h6: 12px
 ) !default;
 
-// ==== margin and padding ====
+// ==== width, height, distance ====
+$global-body-width: 1024px !default;
+
+$global-container-top: 60px !default;
+
+$global-left-part-width: 764px !default;
+
+$global-right-part-width: 240px !default;
+
+// ==== background ====
+$global-background: $white !default;
+
+// ==== line height ====
+$global-lineheight: 1.5 !default;
+
+
+// ======== margin and padding ========
 $margin-large: 20px !default;
 $margin-middle: 12px !default;
 $margin-small: 8px !default;
@@ -46,7 +54,7 @@ $padding-large: 20px !default;
 $padding-middle: 12px !default;
 $padding-small: 8px !default;
 
-// ==== set right nav/userInfo default value ====
+// ======== set right nav/userInfo default value ========
 $side-top: 50px !default;
 
 $side-userinfo-width: 120px !default;
@@ -110,3 +118,13 @@ $code-type-list: (
         go: "Go"
 ) !default;
 
+// ======== Archive ========
+// ==== timeline ====
+$archive-timeline-font-size: 28px !default;
+
+$archive-timeline-margin: 15px 0 !default;
+
+// ==== post ====
+$archive-post-padding: 4px 20px !default;
+
+$archive-post-time-margin: 10px !default;

@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: $global-lineheight;
+  font-family: $global-font-family;
 }
 
 a {
@@ -37,6 +38,5 @@ img{
 @each $header, $size in $global-headings {
   #{$header} {
     font-size: $size;
-    margin: 0;
   }
 }
