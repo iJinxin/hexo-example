@@ -1,7 +1,7 @@
 ---
 title: JavaScript语言精粹
 categories: 思考总结
-tags: JavaScript readingBook
+tags: [JavaScript,readingBook]
 date: 2018-10-08 10:00:00
 ---
 很早以前就买了《JavaScript语言精粹》这本书，惭愧的是一直没看，最近翻了一遍不禁感慨过去走的一些弯路实在不应该。看书应该作为习惯，作为知识储备，而不是在遇到瓶颈，遇到问题时的解药。<!-- more -->
