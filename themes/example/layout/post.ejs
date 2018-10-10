@@ -8,7 +8,7 @@
             <% if (page.categories.length){ %>
                 <span class="post-category">
                     <% page.categories.forEach(function (category) { %>
-                        <a class="category" href="<%= config.root %>category/#<%= category.name %>"><%= category.name %></a>
+                        <a class="category" href="<%= url_for(category.path) %>"><%= category.name %></a>
                     <% }) %>
                 </span>
             <% } %>
