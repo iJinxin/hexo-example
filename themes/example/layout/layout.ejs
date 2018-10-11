@@ -10,9 +10,12 @@
             </main>
         </div>
         <div class="right-part">
-            <%- partial('_partial/sidebar') %>
+            <% if (is_home()) {%>
+                <%- partial('_partial/sidebar') %>
+            <% } %>
+
             <% if (is_post()) { %>
-            <%- partial('_partial/toc')%>
+                <%- partial('_partial/toc')%>
             <% } %>
         </div>
     </div>

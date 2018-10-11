@@ -1,18 +1,24 @@
 .header {
   position: relative;
-  background: #171f26;
-  padding: 10px 0;
-  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  background: $header-background;
+  padding: $header-padding;
+  box-shadow: $header-shadow;
+  font-family: $global-Lato-font-family;
   .header-inner {
-    width: 1024px;
+    width: $global-body-width;
     margin: 0 auto;
-    padding: 0;
     .header-nav-link {
       display: inline-block;
       line-height: 50px;
       padding: 0 15px;
+      font-size: 15px;
       color: $white;
       opacity: 0.7;
+      transition: .2s;
+      &:hover {
+        color: $theme-color-hover;
+        opacity: 1;
+      }
     }
   }
 }

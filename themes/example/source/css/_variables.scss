@@ -17,9 +17,9 @@ $light-gray: #e6e6e6 !default;
 
 // ======== set global default value ========
 // ==== font ====
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !default;
 
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+$global-Lato-font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif !default;
 
 $global-font-size: 16px !default;
 
@@ -37,17 +37,17 @@ $global-headings: (
 // ==== width, height, distance ====
 $global-body-width: 1024px !default;
 
-$global-container-top: 60px !default;
-
 $global-left-part-width: 764px !default;
 
 $global-right-part-width: 240px !default;
+
+$global-main-top: 20px !default;
 
 // ==== background ====
 $global-background: $white !default;
 
 // ==== line height ====
-$global-lineheight: 1.5 !default;
+$global-lineheight: 1.6 !default;
 
 
 // ======== margin and padding ========
@@ -74,6 +74,12 @@ $side-nav-icon-padding: 5px !default;
 
 $side-nav-font: 15px !default;
 
+// ======== Header ========
+$header-background: #171f26 !default;
+
+$header-padding: 10px 0 !default;
+
+$header-shadow: 0 1px 3px rgba(26,26,26,.1) !default;
 
 
 // ======== Post ========

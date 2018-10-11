@@ -23,11 +23,13 @@ img{
 .container {
   width: $global-body-width;
   margin: auto;
-  margin-top: $global-container-top;
   display: flex;
   justify-content: space-between;
   .left-part {
     width: $global-left-part-width;
+    .main {
+      padding-top: $global-main-top;
+    }
   }
   .right-part {
     width: $global-right-part-width;
