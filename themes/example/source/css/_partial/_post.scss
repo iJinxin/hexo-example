@@ -1,5 +1,6 @@
 // post common style
 .post-abstract, .post-whole {
+  padding-top: $padding-large;
   .post-title h2 {
     font-weight: $global-font-weight;
     margin: 0;
@@ -19,7 +20,6 @@
 
 // ==== post abstract ====
 .post-abstract {
-  padding-top: $padding-large;
   padding-bottom: $padding-small;
   border-bottom: $post-border
 }
