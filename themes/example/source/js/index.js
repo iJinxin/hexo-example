@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     function Sky(config) {
-        this.config = config;
+
     }
 
     Sky.prototype.init = function () {
@@ -13,27 +13,20 @@
         var $toc = $('#post-toc');
 
         if ($toc.length) {
-            console.log($toc.offset().top);
-            console.log($(window).scrollTop());
             var minScrollTop = $toc.offset().top;
 
             $(window).scroll(function () {
                 var scrollTop = $(window).scrollTop();
-                console.log(scrollTop);
-                console.log(minScrollTop);
+
                 if (scrollTop < minScrollTop) {
-                    $toc.css({
-                        'position': 'absolute',
-                    });
+                    $toc.css({'position': 'absolute'});
                 } else {
-                    $toc.css({
-                        'position': 'fixed',
-                    });
+                    $toc.css({'position': 'fixed'});
                 }
             })
         }
     };
 
-    var sky = new Sky(window.config);
+    var sky = new Sky();
     sky.init();
 })(window);
