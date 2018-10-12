@@ -1,6 +1,11 @@
+.post-toc-content {
+  position: relative;
+  margin-top: 60px;
+}
 .post-toc {
   font-family: $global-Lato-font-family;
-  margin-top: 40px;
+  position: absolute;
+  top: 20px;
   .post-toc-title {
     display: inline-block;
     border-top: 1px solid #e3e3e3;
