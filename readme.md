@@ -6,7 +6,7 @@ xiaotao：http://niexiaotao.cn/
 haojin：http://haojen.github.io/
 hexo：https://hexo.io/zh-cn/docs/helpers
 hexo-theme-aircloud:https://github.com/aircloud/hexo-theme-aircloud
-
+gitment: https://imsun.net/posts/gitment-introduction/
 
 ### plan
 - 主页样式 -- done
