@@ -1,18 +1,33 @@
 .post-toc {
-  background: #ededed;
-  border-radius: 4px;
-  padding: 10px 20px 10px 0;
-
-  .post-menu {
-    font-family: $global-Lato-font-family;
+  font-family: $global-Lato-font-family;
+  margin-top: 40px;
+  .post-toc-title {
+    display: inline-block;
+    border-top: 1px solid #e3e3e3;
+    padding: 7px 0;
+    font-size: 15px;
+    color: $theme-color-base;
   }
-
+  a {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: inherit;
+    padding: 7px 0;
+    display: block;
+    line-height: 1;
+    font-size: 15px;
+    &:hover{
+      color: $theme-color-hover;
+    }
+  }
   ol {
     list-style: none;
     padding-left: 15px;
   }
   > ol {
-    margin: 10px 0;
-    padding-left: 20px;
+    margin: 0;
+    padding: 0;
   }
 }
