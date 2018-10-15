@@ -2,25 +2,26 @@
 .footer-social {
   text-align: center;
   color: $black;
-  font-size: 14px;
+  font-size: $footer-social-font;
 }
 .social-link {
   & + .social-link {
-    margin-left: 10px;
+    margin-left: $footer-social-icon-margin;
   }
   .iconfont {
-    font-size: 30px;
+    font-size: $footer-social-font-size;
     color: $black;
   }
 }
 .footer-copyright {
   .time-line {
-    margin: 5px 0;
+    margin: $footer-social-time-line;
     .iconfont {
       font-size: 12px;
     }
   }
   .theme-info {
-    margin: 0 0 15px 0;
+    margin: 0;
+    margin-bottom: $footer-social-bottom;
   }
 }

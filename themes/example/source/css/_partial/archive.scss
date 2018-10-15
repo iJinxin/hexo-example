@@ -16,11 +16,11 @@
       margin-right: $archive-post-time-margin;
     }
     &:hover {
-      border-left: 3px solid $theme-color;
+      border-left: 3px solid $theme-color-hover;
       transform: translateX(3px);
       transition: 0.3s ease-out;
       .archive-post-link {
-        color: $theme-color;
+        color: $theme-color-hover;
       }
     }
   }

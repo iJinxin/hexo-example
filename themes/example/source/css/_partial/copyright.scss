@@ -1,9 +1,9 @@
 .post-copyright {
-  padding: 10px 0;
-  font-size: 16px;
+  padding: $copyright-padding;
+  font-size: $copyright-font;
   border-bottom: 1px solid $gray;
   .post-copyright-item {
-    margin: 5px 0;
+    margin: $copyright-item-margin;
     a {
       color: $theme-color-base;
       &:hover {
