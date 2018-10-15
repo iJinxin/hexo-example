@@ -73,8 +73,8 @@ pagination_dir: page
 # comment
 ## gitment config
 comment:
-  owner: ijinxin
-  repo: https://github.com/settings/applications/913816
+  owner: iJinxin
+  repo: iJinxin.github.io
   id: 9d07438755bc000ce515
   secret: eb8aebc798559d4f690f1e950c308d1b16b61262
 
@@ -86,4 +86,6 @@ theme: example
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:iJinxin/iJinxin.github.io.git
+  branch: master
