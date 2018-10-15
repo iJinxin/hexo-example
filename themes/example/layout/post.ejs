@@ -12,16 +12,20 @@
                     <% }) %>
                 </span>
             <% } %>
+            <span class="post-visit"> <%- __('Post.visit')%>：<span id="busuanzi_value_page_pv"></span>
         </div>
         <div class="post-content">
             <%- page.content %>
         </div>
+        <div class="copy-right">
+
+        </div>
         <% if (page.tags.length) {%>
-        <span class="post-tag">
+        <div class="post-tag">
             <% page.tags.forEach(function (tag) { %>
             <a class="tag" href="<%= url_for(tag.path) %>" title="<%= tag.name %>"><%= tag.name %></a>
             <% })%>
-        </span>
+        </div>
         <% } %>
     </article>
 </div>

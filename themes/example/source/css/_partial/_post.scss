@@ -8,9 +8,14 @@
   .post-title-link {
     color: $black;
   }
-  .post-time {
-    color: $gray;
+  .post-time, .post-category, .post-visit {
+    color: $dark-gray;
     font-size: $post-time-font;
+  }
+  .post-category, .post-visit {
+    &::before {
+      content: '·';
+    }
   }
   .post-content {
     color: $black;
@@ -24,6 +29,25 @@
   border-bottom: $post-border
 }
 
+// ==== post whole ====
+.post-whole {
+  .post-content {
+    border-bottom: 1px solid $gray;
+  }
+  .post-tag {
+    padding: 15px 0;
+    .tag {
+      margin-right: 6px;
+      color: $theme-color-base;
+      &::before {
+        content: '#';
+      }
+      &:hover {
+        color: $theme-color-hover;
+      }
+    }
+  }
+}
 
 // ==== Code ==== //
 // code style
