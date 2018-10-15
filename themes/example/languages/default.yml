@@ -16,3 +16,8 @@ userInfo:
 
 Post:
   visit: visited
+
+copyright:
+  author: Author
+  link: Link
+  license: License
