@@ -1,4 +1,6 @@
 .paginator {
+  font-family: $global-Lato-font-family;
+  font-size: 20px;
   &::after {
     content: "";
     clear: both;
@@ -10,8 +12,19 @@
   margin: 1em 0;
   .prev {
     float: left;
+    transition: .3s ease-out;
+    &:hover {
+      color: $theme-color-hover;
+      transform: translateX(-4px);
+    }
   }
   .next {
     float: right;
+    transition: .3s ease-out;
+
+    &:hover {
+      color: $theme-color-hover;
+      transform: translateX(4px);
+    }
   }
 }
