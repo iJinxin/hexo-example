@@ -1,39 +1,44 @@
 .post-toc-content {
   height: 100%;
   position: relative;
-  margin-top: 60px;
+  margin-top: $toc-content-top;
 }
 .post-toc {
   font-family: $global-Lato-font-family;
+  font-size: $toc-font-size;
   position: absolute;
-  top: 20px;
+  top: $toc-fixed-top;
   .post-toc-title {
     display: inline-block;
-    border-top: 1px solid #e3e3e3;
-    padding: 7px 0;
-    font-size: 15px;
+    border-top: $toc-border-top;
+    padding: $top-text-padding;
     color: $theme-color-base;
   }
-  a {
+  .toc-link {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     font-family: inherit;
-    padding: 7px 0;
+    padding: $top-text-padding;
     display: block;
     line-height: 1;
-    font-size: 15px;
     &:hover{
       color: $theme-color-hover;
     }
   }
+  .toc-link.active {
+    color: $theme-color-base;
+  }
   ol {
     list-style: none;
-    padding-left: 15px;
+    padding-left: $toc-ol-left;
   }
   > ol {
     margin: 0;
     padding: 0;
+  }
+  .back-to-top {
+    margin-top: $toc-back-to-top;
   }
 }
