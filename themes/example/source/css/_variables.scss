@@ -34,20 +34,25 @@ $global-headings: (
         h6: 12px
 ) !default;
 
-// ==== width, height, distance ====
-$global-body-width: 1024px !default;
-
-$global-left-part-width: 764px !default;
-
-$global-right-part-width: 240px !default;
-
-$global-main-top: 20px !default;
-
 // ==== background ====
 $global-background: $white !default;
 
 // ==== line height ====
 $global-lineheight: 1.6 !default;
+
+// ======== Container ========
+// ==== width, height, distance ====
+$global-body-width: 1024px !default;
+
+$container-width: 1024px !default;
+
+$container-main-width: 784px !default;
+
+$container-aside-width: 240px !default;
+
+$container-offset: 120px !default;
+
+$container-main-padding: 15px !default;
 
 
 // ======== margin and padding ========
@@ -88,6 +93,8 @@ $post-border: 1px solid $light-gray !default;
 $post-time-font: 14px !default;
 // ==== Toc ====
 $toc-content-top: 60px !default;
+
+$toc-content-padding: 0 10px !default;
 
 $toc-fixed-top: 20px !default;
 

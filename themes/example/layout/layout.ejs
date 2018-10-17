@@ -2,24 +2,19 @@
 <html>
 <%- partial('_partial/head') %>
 <body>
-    <%- partial('_partial/header')%>
-    <div class="container">
-        <div class="left-part">
-            <main class="main">
-                <%- body %>
-            </main>
-        </div>
-        <div class="right-part">
-            <% if (is_home()) {%>
-                <%- partial('_partial/info') %>
-            <% } %>
+<%- partial('_partial/header') %>
+<div class="container">
+    <main class="main">
+        <%- body %>
+    </main>
 
-            <% if (is_post()) { %>
-                <%- partial('_partial/toc')%>
-            <% } %>
-        </div>
-    </div>
-    <%- partial('_partial/social')%>
+    <% if (is_post()) { %>
+    <aside class="post-toc-aside">
+        <%- partial('_partial/toc') %>
+    </aside>
+    <% } %>
+</div>
+<%- partial('_partial/social') %>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <%- js('js/index.js') %>

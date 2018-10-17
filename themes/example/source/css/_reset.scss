@@ -24,18 +24,17 @@ img{
 
 // container style
 .container {
-  width: $global-body-width;
+  width: $container-width;
   margin: auto;
+  transform: translateX($container-offset);
   display: flex;
   justify-content: space-between;
-  .left-part {
-    width: $global-left-part-width;
-    .main {
-      padding-top: $global-main-top;
-    }
+  .main {
+    width: $container-main-width;
+    padding: $container-main-padding;
   }
-  .right-part {
-    width: $global-right-part-width;
+  .post-toc-aside {
+    width: $container-aside-width;
     position: relative;
   }
 }
