@@ -6,11 +6,11 @@ code, pre {
 code {
   padding: 3px 5px;
   border-radius: 4px;
-  color: $code-color;
+  color: $theme-color-base;
 }
 .highlight {
   margin: 1em 0;
-  background: #ededed;
+  background: $code-background;
   border-radius: 4px;
   overflow-x: auto;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
@@ -34,7 +34,7 @@ code {
       padding: 2px 7px;
       font-size: $code-font-size;
       content: 'Code';
-      background: darken(#ededed, 2%);
+      background: darken($code-background, 2%);
     }
   }
 
@@ -46,7 +46,7 @@ code {
 
   .gutter {
     width: 10px;
-    color: $gray;
+    color: $dark-gray;
 
     pre {
       margin: 0;
@@ -62,56 +62,44 @@ code {
   }
 
   .code {
-    .comment,
-    .quote {
-      color: map-get($code-highlight-color, comment);
+    // html tags, function name, css selector
+    .name,
+    .title,
+    .section,
+    .selector-id,
+    .selector-class {
+      color: map-get($code-highlight-color, name);
     }
 
+    // html attr's value, string, number
+    .string,
+    .number,
+    .literal{
+      color: map-get($code-highlight-color, string);
+    }
+
+    // js keyword
     .keyword,
     .selector-tag,
     .addition {
       color: map-get($code-highlight-color, keyword);
     }
 
-    .number,
-    .string,
-    .meta .meta-string,
-    .literal,
-    .doctag,
-    .regexp {
-      color: map-get($code-highlight-color, number);
+    // scss variable
+    .variable {
+      color: map-get($code-highlight-color, variable);
     }
 
-    .title,
-    .section,
-    .name,
-    .selector-id,
-    .selector-class {
-      color: map-get($code-highlight-color, title);
+    // js annotation
+    .comment,
+    .quote {
+      color: map-get($code-highlight-color, comment);
     }
 
-    .attribute,
-    .attr,
-    .variable,
-    .template-variable,
-    .class .title,
-    .type {
-      color: map-get($code-highlight-color, attribute);
-    }
-
-    .symbol,
-    .bullet,
-    .subst,
-    .meta,
-    .meta .keyword,
-    .selector-attr,
-    .selector-pseudo,
-    .link {
-      color: map-get($code-highlight-color, symbol);
-    }
-
+    // javascript standard library, deletion
     .built_in,
-    .deletion {
+    .deletion,
+    .meta {
       color: map-get($code-highlight-color, built_in);
     }
   }

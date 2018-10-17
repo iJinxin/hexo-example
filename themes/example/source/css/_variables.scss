@@ -114,40 +114,38 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
 $code-font-size: 14px !default;
 
-$code-color: #c7254e !default;
+$code-background: #eee !default;
 
 $code-highlight-color: (
-        comment: #93a1a1,
-        keyword: #859900,
-        number: #2aa198,
-        title: #268bd2,
-        attribute: #b58900,
+        name: #cdb314,
+        string: #62a05d,
+        comment: #999,
+        keyword: #e28b12,
+        variable: #53a4d9,
         symbol: #cb4b16,
-        built_in: #dc322f
+        built_in: #c92027
 ) !default;
 
 $code-type-list: (
         html: "HTML",
-        js: "JavaScript",
-        bash: "Bash",
         css: "CSS",
+        javascript: "JavaScript",
+        typescripe: "TypeScript",
         scss: "Scss",
+        less: "Less",
+        stylus: "Stylus",
         java: "Java",
-        xml: "XML",
         python: "Python",
-        json: "JSON",
-        swift: "Swift",
-        ruby: "Ruby",
         php: "PHP",
+        ruby: "Ruby",
         c: "C",
         cpp: "C++",
-        scheme: "Scheme",
+        swift: "Swift",
         objectivec: "Objective-C",
-        yml: "YAML",
-        stylus: "Stylus",
-        sql: "SQL",
-        http: "HTTP",
-        go: "Go"
+        go: "Go",
+        json: "JSON",
+        xml: "XML",
+        yml: "YAML"
 ) !default;
 
 // ======== Archive ========
