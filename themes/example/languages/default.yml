@@ -7,6 +7,8 @@ Menu:
 Paginator:
   Prev: Prev
   Next: Next
+  prev_post: Prev
+  next_post: Next
 
 Post:
   visit: visited

@@ -16,12 +16,14 @@
         <% if (page.prev) {%>
             <a class="prev" href="<%- url_for(page.prev.path)%>">
                 <i class="iconfont icon-prev"></i>
-                <%= page.prev.title %>
+                <span class="nav-default"><%= page.prev.title %></span>
+                <span class="nav-mobile"><%- __('Paginator.prev_post') %></span>
             </a>
         <% } %>
         <% if (page.next) {%>
             <a class="next" href="<%- url_for(page.next.path)%>">
-                <%= page.next.title %>
+                <span class="nav-default"><%= page.next.title %></span>
+                <span class="nav-mobile"><%- __('Paginator.next_post')%></span>
                 <i class="iconfont icon-next"></i>
             </a>
         <% } %>

@@ -27,4 +27,15 @@
       transform: translateX(4px);
     }
   }
+  .nav-mobile {
+    display: none;
+  }
+  @include max-screen() {
+    .nav-mobile {
+      display: inline;
+    }
+    .nav-default {
+      display: none;
+    }
+  }
 }

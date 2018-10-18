@@ -7,6 +7,8 @@ Menu:
 Paginator:
   Prev: 上一页
   Next: 下一页
+  prev_post: 上一篇
+  next_post: 下一篇
 
 Post:
   visit: 阅读次数
