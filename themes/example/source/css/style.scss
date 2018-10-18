@@ -1,8 +1,9 @@
 @import "_variables";
-@import "_reset";
 @import "common/_utils";
+@import "_reset";
 
 @import "_partial/_header";
+@import "_partial/mobile";
 @import "_partial/_post";
 @import "_partial/archive";
 @import "_partial/tags";

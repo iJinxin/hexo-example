@@ -39,6 +39,21 @@ img{
     position: relative;
   }
 }
+@include max-screen() {
+  .container {
+    width: 100%;
+    transform: none;
+    margin-top: 50px;
+    .main {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    .post-toc-aside {
+      display: none;
+    }
+  }
+}
 
 // reset h1-h6
 @each $header, $size in $global-headings {

@@ -9,6 +9,7 @@
         this.tocFixed();
         this.tocActive();
         this.backToTop();
+        this.mobileNavToggle();
     };
 
     // make toc stay in the visible area
@@ -59,6 +60,24 @@
             console.log('click');
             $('html,body').animate({ scrollTop: 0 });
         });
+    };
+
+    // mobile nav toggle
+    Sky.prototype.mobileNavToggle = function () {
+        var $mobileNav = $('.mobile-nav-icon'),
+            $mobileMenu = $('.mobile-menu');
+
+        $mobileNav.click(function () {
+            if (!$mobileMenu.hasClass('show-menu')) {
+                $mobileMenu.addClass('show-menu');
+                $mobileMenu.removeClass('hide-menu');
+                $mobileNav.addClass('show-menu').removeClass('hide-menu');
+            } else {
+                $mobileMenu.addClass('hide-menu');
+                $mobileMenu.removeClass('show-menu');
+                $mobileNav.removeClass('show-menu').addClass('hide-menu');
+            }
+        })
     };
 
     var sky = new Sky();

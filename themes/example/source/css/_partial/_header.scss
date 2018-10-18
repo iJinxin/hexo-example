@@ -22,3 +22,8 @@
     }
   }
 }
+@include max-screen() {
+  .header {
+    display: none;
+  }
+}
