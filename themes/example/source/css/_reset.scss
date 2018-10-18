@@ -27,7 +27,7 @@ img{
 .container {
   width: $container-width;
   margin: auto;
-  transform: translateX($container-offset);
+  padding-left: $container-offset;
   display: flex;
   justify-content: space-between;
   .main {
