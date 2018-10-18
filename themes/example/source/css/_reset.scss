@@ -27,7 +27,7 @@ img{
 .container {
   width: $container-width;
   margin: auto;
-  padding-left: $container-offset;
+  padding-left: $container-aside-width;
   display: flex;
   justify-content: space-between;
   .main {
@@ -42,7 +42,7 @@ img{
 @include max-screen() {
   .container {
     width: 100%;
-    transform: none;
+    padding-left: 0;
     margin-top: 50px;
     .main {
       width: 100%;
