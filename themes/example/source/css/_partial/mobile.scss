@@ -63,6 +63,9 @@
       font-size: 15px;
       color: $dark-gray;
     }
+    .mobile-menu-item > .iconfont {
+      padding-right: 5px;
+    }
   }
   .mobile-menu.show-menu {
     animation: showMenu 0.4s forwards;
