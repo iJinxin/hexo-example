@@ -4,9 +4,15 @@ code, pre {
 }
 
 code {
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: $theme-color-base;
+  background: $code-background;
+  color: $code-color;
+  padding: 0 5px;
+}
+blockquote {
+  margin: 1em 0;
+  padding: 0 20px;
+  border: 1px solid #e3e3e3;
+  border-left: $code-blockquote-border-left;
 }
 .highlight {
   margin: 1em 0;
@@ -101,6 +107,29 @@ code {
     .deletion,
     .meta {
       color: map-get($code-highlight-color, built_in);
+    }
+  }
+}
+
+// table
+table {
+  max-width: 100%;
+  border: 1px solid #e3e3e3;
+  margin: 1em 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+  tr {
+    td, th {
+      padding: 5px 10px;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+  tbody {
+    tr:nth-child(even) {
+      background: #eee;
+
     }
   }
 }

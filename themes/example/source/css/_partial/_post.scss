@@ -19,6 +19,12 @@
   }
   .post-content {
     font-size: $global-font-size;
+    a {
+      color: $theme-color-base;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

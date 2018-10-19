@@ -114,11 +114,15 @@ $toc-back-to-top: 30px !default;
 
 
 // ======== Code ========
-$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
+$code-font-family: "Source Code Pro",Monaco,Menlo,Consolas,monospace !default;
 
 $code-font-size: 14px !default;
 
 $code-background: #eee !default;
+
+$code-color: #4d4d4c !default;
+
+$code-blockquote-border-left: 5px solid #0af !default;
 
 $code-highlight-color: (
         name: #cdb314,
@@ -135,6 +139,7 @@ $code-type-list: (
         css: "CSS",
         javascript: "JavaScript",
         typescripe: "TypeScript",
+        node: "NodeJs",
         scss: "Scss",
         less: "Less",
         stylus: "Stylus",
