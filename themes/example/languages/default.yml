@@ -12,6 +12,7 @@ Paginator:
 
 Post:
   visit: visited
+  readMore: ReadMore
 
 copyright:
   author: Author
