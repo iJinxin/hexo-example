@@ -4,16 +4,10 @@
 <body>
 <%- partial('_partial/header') %>
 <%- partial('_partial/mobile-header')%>
-<div class="container">
-    <main class="main">
+<div class="main">
+    <div class="content-inner">
         <%- body %>
-    </main>
-
-    <% if (is_post()) { %>
-    <aside class="post-toc-aside">
-        <%- partial('_partial/toc') %>
-    </aside>
-    <% } %>
+    </div>
 </div>
 <%- partial('_partial/social') %>
 </body>

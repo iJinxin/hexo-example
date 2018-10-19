@@ -31,12 +31,24 @@ img{
   display: flex;
   justify-content: space-between;
   .main {
+    box-sizing: border-box;
     width: $container-main-width;
     padding: $container-main-padding;
   }
   .post-toc-aside {
     width: $container-aside-width;
     position: relative;
+  }
+}
+.main {
+  width: $container-main-width;
+  margin: 0 auto;
+  padding: $container-main-padding;
+  box-sizing: border-box;
+}
+@include max-screen($toc-max-screen-width) {
+  .post-toc-aside {
+    display: none;
   }
 }
 @include max-screen() {
@@ -48,9 +60,6 @@ img{
       width: 100%;
       padding: 0 15px;
       box-sizing: border-box;
-    }
-    .post-toc-aside {
-      display: none;
     }
   }
 }
