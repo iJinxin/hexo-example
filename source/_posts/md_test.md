@@ -60,6 +60,15 @@ function add(num1, num2) {
 }
 ```
 
+```node
+const PIE = 3.141592;
+```
+```css
+.box {
+    color: #ededed
+}
+```
+
 这是行间代码```add```啊啊
 
 这是行间代码 ```add``` 啊啊
