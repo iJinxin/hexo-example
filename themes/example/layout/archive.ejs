@@ -14,7 +14,7 @@
     <% } %>
 
     <% year = 0 %>
-    <% site.posts.map(function (post) { %>
+    <% page.posts.map(function (post) { %>
         <% if (page.archive) { %>
             <% post.year = date(post.date, 'YYYY') %>
             <% if (year != post.year) { %>
