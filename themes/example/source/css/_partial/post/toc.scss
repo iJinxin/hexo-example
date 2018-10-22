@@ -4,6 +4,7 @@
   font-family: $global-Lato-font-family;
   font-size: $toc-font-size;
   color: $black;
+  box-sizing: border-box;
   position: absolute;
   margin-left: $toc-offset-left;
   .post-toc-title {
@@ -38,5 +39,11 @@
   }
   .back-to-top {
     margin-top: $toc-back-to-top;
+  }
+}
+
+@include max-screen($toc-max-screen-width) {
+  .post-toc {
+    display: none;
   }
 }

@@ -14,14 +14,13 @@ a {
   }
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   display: inline-block;
   font-family: $global-font-family;
   line-height: $global-lineheight;
 }
-
 
 // main style
 .main {
@@ -31,22 +30,21 @@ img{
   padding: $main-content-padding;
   box-sizing: border-box;
 }
+
 @include max-screen($toc-max-screen-width) {
   .post-toc-aside {
     display: none;
   }
 }
+
 @include max-screen() {
-  .container {
+  .main {
     width: 100%;
-    padding-left: 0;
     margin-top: 50px;
-    .main {
-      width: 100%;
-      padding: 0 15px;
-      box-sizing: border-box;
-    }
+    padding: 0 15px;
+    box-sizing: border-box;
   }
+
 }
 
 // reset h1-h6

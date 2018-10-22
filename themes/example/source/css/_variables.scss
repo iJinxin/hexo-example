@@ -42,7 +42,7 @@ $global-lineheight: 1.6 !default;
 
 // ======== Main ========
 // ==== width, height, distance ====
-$main-content-width: 790px !default;
+$main-content-width: 780px !default;
 
 $main-content-padding: 15px !default;
 
@@ -92,11 +92,9 @@ $toc-width: 240px !default;
 
 $toc-padding: 0 10px !default;
 
-$toc-max-screen-width: $main-content-width + $toc-width + $main-content-padding + 15px !default;
+$toc-max-screen-width: $main-content-width + $toc-width*2 + 50px !default;
 
-$toc-offset-left: $main-content-width + 10px !default;
-
-$toc-fixed-top: 20px !default;
+$toc-offset-left: $main-content-width - 10px !default;
 
 $toc-font-size: 15px !default;
 
