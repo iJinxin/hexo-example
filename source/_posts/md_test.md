@@ -25,6 +25,9 @@ title: markdown格式检测
 > 引用大佬佳句
 > again
 
+
+>引用效果
+<123
 ### 分割线
 ----
 ****
@@ -42,6 +45,10 @@ title: markdown格式检测
 1. 第一行
 2. 第二行
 
+- 一级
+ 1. 二级
+ 2. 二级
+
 ### 表格
 first header | second header
 -------------| -------------
@@ -54,6 +61,15 @@ row2-col1 | row2-col2
 ```javascript
 function add(num1, num2) {
     return num1 + num2;
+}
+```
+
+```node
+const PIE = 3.141592;
+```
+```css
+.box {
+    color: #ededed
 }
 ```
 
