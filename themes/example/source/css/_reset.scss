@@ -23,27 +23,12 @@ img{
 }
 
 
-// container style
-.container {
-  width: $container-width;
-  margin: auto;
-  padding-left: $container-aside-width;
-  display: flex;
-  justify-content: space-between;
-  .main {
-    box-sizing: border-box;
-    width: $container-main-width;
-    padding: $container-main-padding;
-  }
-  .post-toc-aside {
-    width: $container-aside-width;
-    position: relative;
-  }
-}
+// main style
 .main {
-  width: $container-main-width;
+  position: relative;
+  width: $main-content-width;
   margin: 0 auto;
-  padding: $container-main-padding;
+  padding: $main-content-padding;
   box-sizing: border-box;
 }
 @include max-screen($toc-max-screen-width) {

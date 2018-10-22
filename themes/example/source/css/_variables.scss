@@ -40,15 +40,11 @@ $global-background: $white !default;
 // ==== line height ====
 $global-lineheight: 1.6 !default;
 
-// ======== Container ========
+// ======== Main ========
 // ==== width, height, distance ====
-$container-width: 1000px !default;
+$main-content-width: 790px !default;
 
-$container-main-width: 790px !default;
-
-$container-aside-width: 240px !default;
-
-$container-main-padding: 15px !default;
+$main-content-padding: 15px !default;
 
 
 // ======== margin and padding ========
@@ -92,11 +88,13 @@ $post-abstract-bottom: 20px !default;
 
 $post-time-font: 14px !default;
 // ==== Toc ====
-$toc-max-screen-width: $container-width + $container-aside-width + $container-main-padding + 15px !default;
+$toc-width: 240px !default;
 
-$toc-content-top: 60px !default;
+$toc-padding: 0 10px !default;
 
-$toc-content-padding: 0 10px !default;
+$toc-max-screen-width: $main-content-width + $toc-width + $main-content-padding + 15px !default;
+
+$toc-offset-left: $main-content-width + 10px !default;
 
 $toc-fixed-top: 20px !default;
 
