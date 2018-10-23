@@ -21,6 +21,7 @@
     font-size: $global-font-size;
     a {
       color: $theme-color-base;
+      word-break: break-all;
       &:hover {
         text-decoration: underline;
       }
