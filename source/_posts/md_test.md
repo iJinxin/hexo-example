@@ -1,5 +1,6 @@
 ---
 title: markdown格式检测
+categories: 思考总结
 ---
 
 # 这是一级标题
